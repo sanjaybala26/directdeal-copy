@@ -1,0 +1,76 @@
+/* Profile.css */
+.profile-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0e1a0e;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  right: 20px; /* Changed from left to right */
+  z-index: 1000;
+}
+
+.profile-button:hover {
+  background-color: #0f222b;
+}
+
+.profile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Changed from left to right */
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid #ddd; /* Changed from border-right to border-left */
+  box-shadow: -8px 0px 16px rgba(0, 0, 0, 0.1); /* Adjusted shadow direction */
+  transition: right 0.3s ease; /* Changed from left to right */
+  z-index: 999;
+}
+
+.profile-sidebar.open {
+  right: 0; /* Changed from left to right */
+}
+
+.profile-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #0f222b;
+}
+
+.profile-content p {
+  margin: 10px 0;
+}
+
+.profile-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #131f13;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.profile-content button:hover {
+  background-color: #232f23;
+}
+
+.close-button {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

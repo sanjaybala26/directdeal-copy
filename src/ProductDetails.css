@@ -1,0 +1,30 @@
+/* src/ProductDetails.css */
+
+.product-details {
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 600px; /* Max width for the details box */
+    margin: 20px auto; /* Center align the box */
+    text-align: center; /* Center align text */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  h1 {
+    margin: 20px 0;
+    color: #333; /* Darker color for the heading */
+  }
+  
+  p {
+    margin: 10px 0;
+    color: #555; /* Light gray color for product details */
+  }
+  

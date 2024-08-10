@@ -1,0 +1,40 @@
+/* src/FavoritesPage.css */
+.favorites-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favorite-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .favorite-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .remove-favorite {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-favorite:hover {
+    background-color: #c0392b;
+  }
+  

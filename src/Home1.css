@@ -1,0 +1,561 @@
+/* src/components/HomePage.css */
+.asas {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-top: 60px;
+}
+
+.asas::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  min-height: 70px;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.nav-links-left,
+.nav-links-right {
+  display: flex;
+  width: 40%;
+}
+
+.nav-links-left {
+  justify-content: flex-end;
+}
+
+.nav-links-right {
+  justify-content: flex-start;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #22303b;
+}
+
+
+
+.logo {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo p{
+  color: #000;
+  font-size: 25px;
+  padding: 6px;
+  animation: fadeIn 5s;
+}
+.logo img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid 134B70;
+  height: 150px;
+  width: 150px;
+  top: 10px;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #eef0f2;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+section h1,
+section h2 {
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .nav-links-left,
+  .nav-links-right {
+    width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links-left,
+  .nav-links-right {
+    width: 48%;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 2.2em;
+  }
+
+  section p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+    height: auto;
+  }
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    transform: none;
+    left: auto;
+  }
+  .nav-links-left,
+  .nav-links-right {
+    width: auto;
+    justify-content: center;
+  }
+  .nav-links li {
+    margin: 0.25rem 0.5rem;
+  }
+  .logo {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    left: auto;
+    transform: none;
+    width: 60px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  section {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.25rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 50px;
+  }
+  section h1,
+  section h2 {
+    font-size: 1.8em;
+  }
+  section p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-links li {
+    margin: 0.15rem 0.25rem;
+  }
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+  section h1,
+  section h2 {
+    font-size: 1.6em;
+  }
+  section p {
+    font-size: 0.8em;
+  }
+}
+
+.a {
+  width:  0%;
+  height: 600px;
+  background-color: white;
+}
+.a .lottie1 {
+  width: 100%;
+  height: 650px;
+  position:absolute;
+  left: 0%;
+  opacity: 0.8;
+
+}
+
+.home h1 {
+  position: relative;
+  left: -450px;
+  text-align: left;
+}
+
+/* Basic styling for the boxes */
+.box {
+  width: calc(25% - 20px); /* Adjust the width to fit 5 boxes per row with space between them */
+  margin: 10px;
+  padding: 85px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.box:hover {
+  color: #fff;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#services .sell-box {
+  background-color: #f8f9fa;
+  padding: 50px 20px; /* Adjust padding as needed */
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#services .sell-box h3 {
+  margin-bottom: 10px;
+  color: #333333; /* Example text color */
+}
+
+#services .sell-box p {
+  margin-bottom: 20px;
+  color: #666666; /* Example text color */
+}
+
+#services .sell-box button {
+  padding: 10px 20px;
+  background-color: #0b0c0c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#services .sell-box button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Example scale effect on hover */
+}
+
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+   /* Adjust height as needed */
+}
+
+#about .buy-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 100px;
+  background-image: url("https://img.freepik.com/premium-vector/vector-abstract-bright-wave-smooth-color-transition-backg-halftone-light-grey-white-gradient-fon_775359-53.jpg?ga=GA1.2.1851457982.1721966896&semt=ais_hybrid");
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#about .buy-box h3 {
+  margin-bottom: 10px;
+  color: #333333; /* Example text color */
+}
+
+#about .buy-box p {
+  margin-bottom: 20px;
+  color: #666666; /* Example text color */
+}
+
+#about .buy-box button {
+  padding: 10px 20px;
+  background-color: #0b0c0c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#about .buy-box button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Example scale effect on hover */
+}
+
+
+
+
+
+
+
+
+#services {
+  width: 100%;
+  padding: 0; /* Remove padding to make the section full width */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#services .sell-box {
+  width: 100%;
+  height: auto; /* Adjust the height as needed */
+  background-color: white;
+  background-size: cover;
+  padding: 60px 20px; /* Adjust padding for top and bottom spacing */
+  display: flex;
+  background-image: url("https://img.freepik.com/premium-vector/vector-abstract-bright-wave-smooth-color-transition-backg-halftone-light-grey-white-gradient-fon_775359-53.jpg?ga=GA1.2.1851457982.1721966896&semt=ais_hybrid");
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensure text color contrasts with the background image */
+  box-sizing: border-box;
+}
+
+#services .sell-box a {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+#services .sell-box a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05); /* Example scale effect on hover */
+}
+
+.lottie-container {
+  width: 100%;
+  max-width: 600px; /* Set a max-width to constrain the Lottie animation */
+  margin: 20px 0;
+}
+
+
+
+
+
+
+/* Additional styles for the full-width poster-like appearance */
+#about {
+  width: 100%;
+  padding: 0; /* Remove padding to make the section full width */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#about .buy-box {
+  width: 100%;
+  height: auto; /* Adjust the height as needed */
+  background-color: white;
+  background-size: cover;
+  padding: 100px 20px; /* Adjust padding for top and bottom spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black; /* Ensure text color contrasts with the background image */
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  width: 200px;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+
+/* src/Home1.css */
+#contact button {
+  padding: 20px 40px; /* Increase padding for a larger button */
+  font-size: 20px; /* Increase font size */
+  border: none;
+  background-color: #1a1c1a; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a poster-like effect */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+#contact button:hover {
+  background-color: #1d211d; /* Change background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#contact button:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+
+
+.myproduct{
+  background-color: white;
+  padding: 100px 550px 100px 550px ;
+  border-radius: 6px;
+  background-image: url("https://img.freepik.com/premium-vector/vector-abstract-bright-wave-smooth-color-transition-backg-halftone-light-grey-white-gradient-fon_775359-53.jpg?ga=GA1.2.1851457982.1721966896&semt=ais_hybrid");
+  background-size: cover;
+}
+
+.myproduct button{
+  padding: 40px;
+}
+
+
+.box1{
+  background-image: url("https://media.istockphoto.com/id/1416168804/photo/blank-screen-smartphone-with-tilt-view-isolated-on-white-background-with-clipping-path.webp?b=1&s=170667a&w=0&k=20&c=T6oDByj-BrAzyVPRz7eRmnn7uaijKRH9Sdek_N8BWUY=");
+  background-size: cover;
+}
+.box2{
+  background-image: url("https://plus.unsplash.com/premium_photo-1670537439541-d2eb20e1f6ce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0Y2h8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+}
+.box3{
+  background-image: url("https://media.istockphoto.com/id/1137138120/photo/photo-of-white-washing-machine-with-soft-and-fresh-bright-towels-on-top-standing-isolated.webp?b=1&s=170667a&w=0&k=20&c=ACytnXYxJiLRV4YMy1KyaUI_wOaRDK1g1Rg1upl3C4U=");
+  background-size: cover;
+}
+.box4{
+  background-image: url("https://media.istockphoto.com/id/1007179966/photo/patterned-pouf-and-basket-in-bright-bedroom-interior-with-lamps-plants-and-poster-next-to-bed.webp?b=1&s=170667a&w=0&k=20&c=IhUv4zWf0a4GCDwTf21ca39xxAkMrJuz1sHIZVs_w6o=");
+  background-size: cover;
+}
+.box5{
+  background-image: url("https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+}
+.box6{
+  background-image: url("https://images.unsplash.com/photo-1531104985437-603d6490e6d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+}
+.box7{
+  background-image: url("https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmljeWNsZXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+}
+.box8{
+  background-image: url("https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhcnxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+}
+
+.buy-box p{
+  background-image: url("data:image/jpeg;base64,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");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 70px;
+  color: #22303b;
+}

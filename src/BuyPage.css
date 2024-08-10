@@ -1,0 +1,122 @@
+/* src/BuyPage.css */
+
+.buy-page {
+    padding: 20px;
+    color: white;
+  }
+  .buy-page h1{
+    color: white;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Center align the product boxes */
+  }
+  
+  .product {
+    background-color: white; /* White background for product boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    max-width: 300px; /* Max width for each product box */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .product:hover {
+    transform: translateY(-5px); /* Lift the product box on hover */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  h1 {
+    text-align: center; /* Center align the main heading */
+    margin-bottom: 40px; /* Space below the heading */
+    color: #fdfafa; /* Darker color for the heading */
+  }
+  
+  h2 {
+    margin: 10px 0;
+    color: #121212; /* Slightly darker color for product names */
+  }
+  
+  p {
+    margin: 5px 0;
+    color: #777; /* Light gray color for product details */
+  }
+
+  .product {
+    position: relative;
+  }
+  
+  .favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #888;
+    transition: color 0.3s ease;
+  }
+  
+  .favorite-button.favorited {
+    color: red; /* Color when the product is favorited */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+/* src/BuyPage.css */
+.buy-page {
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.favorite-button.favorite {
+  color: red;
+}
+  
+  

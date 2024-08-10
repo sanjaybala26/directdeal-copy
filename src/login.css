@@ -1,0 +1,56 @@
+/* login.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+.login-form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  border-radius: 15px;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: #22303b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #22303b;
+}
+
+.signup-link {
+  margin-top: 10px;
+}
+
+.signup-link p,a {
+  margin: 0;
+  cursor: pointer;
+  color:22303b;
+}
+
+.signup-link button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-link button:hover {
+  background-color: #218838;
+}

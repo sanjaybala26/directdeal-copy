@@ -1,0 +1,10 @@
+/* Product.css */
+.product-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-container h2 {
+    font-size: 1.5rem;
+  }
+  

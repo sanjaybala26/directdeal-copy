@@ -1,0 +1,25 @@
+/* Navbar.css */
+.navbar {
+    background-color: #171e25;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Ensure login button is on the right */
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #37689d; /* Darker blue on hover */
+    border-radius: 5px;
+}
+
+.auth-links .nav-button {
+    margin-left: auto; /* Pushes the login button to the right */
+}

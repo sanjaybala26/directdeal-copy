@@ -1,0 +1,30 @@
+/* BuySell.css */
+.buysell-container {
+    text-align: center;
+    padding: 20px;
+    background-image: url("https://assets.cleverwebserver.com/Pixel.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .buy-sell {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buy-sell-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .buy-sell-button:hover {
+    background-color: #45a049;
+  }
+  
